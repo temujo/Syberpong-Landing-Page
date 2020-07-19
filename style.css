@@ -1,3 +1,7 @@
+:root{
+  --hover: #{adjust-hue(#a2084a, 45deg)};
+}
+
 body {
   background: rgba(0, 0, 0, 0.9);
   margin: 0;
@@ -10,7 +14,7 @@ body {
   content: "";
   height: 100vh;
   width: 100%;
-  background: rgba(162, 8, 74, 0.5);
+  background-image: url("./img/Ub-2020.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -22,13 +26,13 @@ body {
 .showcase:hover::after {
   filter: blur(0px);
   -webkit-filter: blur(0px);
-  background-image: url("./img/Ub-2020.png");
+  
   
   
 }
 .showcase:hover .content {
-  filter: blur(1px);
-  -webkit-filter: blur(1px);
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
 }
 
 .content {
@@ -43,21 +47,21 @@ body {
   text-align: center;
   transition: all 2000ms ease;
   animation-name: example;
-  animation-duration: 1.8s;
-  /* animation-timing-function: ease-out; */
+  animation-duration: 2.4s;
+  animation-timing-function: ease-out;
   
 }
 @keyframes example{
     0%{
-        top: -24%
-        top: -24%
+        top: -24%;
+        
     }
     /* 50%{
         top: 13%
     } */
     
     100%{
-        top: 15%
+        top: 15%;
     }
 }
 
@@ -75,9 +79,47 @@ body {
   margin-top: 1rem;
 }
 .gamecontainer{
-  margin-top: 2rem;
+  margin-top: 11rem;
+  margin-bottom: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 }
+.buttoncontainer{
+  margin-top: 1rem;
+}
+/* Button */
+a.button2{
+  display:inline-block;
+  padding:0.5em 3em;
+  border:0.16em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.25s;
+  
+  }
+  a.button2:hover, a.button:focus{
+  color:#a2084a;
+  border-color:#a2084a;
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+  
+  a.button2:active{
+  color:#BBBBBB;
+  border-color:#BBBBBB;
+  }
+  @media all and (max-width:30em){
+  a.button2{
+  display:block;
+  margin:0.4em auto;
+  }
+  }
+ 
