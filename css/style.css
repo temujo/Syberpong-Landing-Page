@@ -52,7 +52,7 @@ h1 {
 .content {
   position: absolute;
   z-index: 1;
-  top: 16%;
+  top: 19%;
   left: 50%;
   margin-top: 105px;
   margin-left: -195px;
@@ -61,19 +61,16 @@ h1 {
   text-align: center;
   transition: all 2000ms ease;
   animation-name: textfall;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(.02,1.03,.41,.95);
 }
 @keyframes textfall {
   0% {
-    top: -10%;
+    top: -80%;
   }
-  /* 50%{
-        top: 13%
-    } */
-
+  
   100% {
-    top: 16%;
+    top: 19%;
   }
 }
 
@@ -90,7 +87,15 @@ h1 {
   line-height: 1.7;
   margin-top: 1rem;
 }
-
+.conceptcontainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 7;
+}
+.conceptimg{
+  width: 300px;
+}
 .buttoncontainer {
   margin-top: 2rem;
 }
