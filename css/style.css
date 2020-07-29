@@ -138,6 +138,9 @@ h1 {
   width: 600px;
   margin: 2rem;
 }
+.storycontainer{
+  text-align: center;
+}
 .aboutgamecontainer{
   margin-top: 10rem;
 }
@@ -212,20 +215,7 @@ a.button2:active {
     margin: 0.4em auto;
   }
 }
-/* Game stuff */
-.gamecontainer {
-  position: absolute;
-  margin-top: 1.5rem;
-  margin-bottom: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.disclaimer {
-  text-align: center;
-  opacity: 0.4;
-}
+
 
 @media (max-width: 700px) {
   .aboutgamecontainer .puzzlegrid {
@@ -323,4 +313,6 @@ a.button2:active {
   opacity: 1;
 }
 
-/* Footer */
+
+/* Game  */
+

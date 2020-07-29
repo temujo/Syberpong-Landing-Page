@@ -1,0 +1,13 @@
+/* Game stuff */
+body{
+    margin: 0;
+    background-color: #0F132B ;
+}
+.gamecontainer {
+    margin-top: 4.2rem;
+    width: 100%;
+  }
+iframe{
+    display: block;
+    margin: auto;
+}
