@@ -13,8 +13,10 @@
       href="https://fonts.googleapis.com/css?family=Montserrat"
     />
     <link rel="stylesheet" type="text/css" href='./css/survey.css' />
+    
   </head>
   <body>
+    
     <main>
       <header>
         <h1 id="title">
@@ -99,14 +101,17 @@
               <textarea id="openfeedback" name="feedback" placeholder="Enter your comment here..."></textarea>
           </div>
           <div class="submitcontainer">
-            <button type="submit" id="submit" class="submit-button">
+            <button type="submit" id="submitid" class="submit-button" onclick='submitHandler()'>
                 Submit
-              </button>
+
+            </button>
           </div>
         </form>
       </div>
     </main>
+    <script src="index.js"></script>
   </body>
+  
 </html>
 
 

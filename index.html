@@ -12,9 +12,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/slideshow.css" />
+    <link rel="stylesheet" href='css/imageslider.css' />
+     <!-- image javascript  -->
+   
     <title>Syberpong - Indie Game Developers</title>
   </head>
   <body>
+    
     <script
       src="https://kit.fontawesome.com/2f23444d58.js"
       crossorigin="anonymous"
@@ -40,14 +44,25 @@
       </div>
     </header>
     <div class="separator zindex"></div>
+
+    <!-- UB before and UB 2020 slider -->
+
     <section class="theme">
-      <div class="themecontainer zindex">
+      <script src="./slideshow/imageslider.js"></script>
+    <div class="themecontainer zindex">
         <h1>Post-Apocalyptic Ulaanbaatar</h1>
-        <div class="ubimg">
-          <img src="img/Ub2020.png" alt="UB">
-          <p>Not much game displays Ulaanbaatar, the capital of Mongolia, especially the Ger Horoolol area. Therefore, we've decided to set our Theme in Ulaanbaatar</p>
+      <div class="ubimgcontainer">
+        <div class="ba-slider">
+          <img src="./img/Ub2020.png" alt="">       
+          <div class="resize">
+            <img src="./img/ubbefore.png" alt="" class="fullimage">
+          </div>
+          <span class="handle"></span>
         </div>
       </div>
+      
+    </div>
+  
     </section>
     <div class="separator zindex"></div>
     <section class="story">
@@ -57,21 +72,22 @@
     </section>
     <div class="separator zindex"></div>
     <section id="aboutgame">
-      <div class="aboutgamecontainer zindex">
-        
         <h1>Puzzles</h1>
+      <div class="aboutgamecontainer">
+        
+        
         <div class="puzzlegrid">
           <div class="marginimage">
             <h2>Radio waves</h2>
             <img src="img/radio.png" alt="radiowave" class="puzzleimage" />
           </div>
-          <div>
+          <div class="marginimage">
             <h2>DC Curcuit</h2>
             <img src="img/puzzles.PNG" alt="radiowave" class="puzzleimage smallerimage" />
           </div>
-          <div class="puzzletext">
+          <!-- <div class="puzzletext">
           <p>Our puzzles marries with our ever-lasting aim to offer alternative way for the education system. We tried to make the learning process as engaging and interesting as possible with our Puzzles</p>
-        </div>
+          </div> -->
         </div>
         <div class="separator zindex"></div> 
       </div>
@@ -112,7 +128,7 @@
           <div class="row">
             <div class="col-md-8 col-sm-6 col-xs-12">
               <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
-           <a href="https://www.instagram.com/syberpong/" target="_blank">Syberpong</a>.
+           <a href="https://www.instagram.com/syberpong/" target="_blank">Syberpong Studios</a>.
               </p>
             </div>
   
@@ -125,7 +141,8 @@
           </div>
         </div>
   </footer>
-
-   
+  
+  
   </body>
+  
 </html>

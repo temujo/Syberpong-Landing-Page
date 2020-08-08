@@ -1,0 +1,83 @@
+@import "lesshat";
+.themecontainer{
+  
+}
+
+.ubimgcontainer{
+  padding: 2rem;
+}
+
+.themecontainer h1{
+  text-align: center;
+}
+.ba-slider {
+
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+  margin: auto;
+}
+
+.ba-slider img {
+  width: 100%;
+  display: block;
+}
+
+.resize {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 49%;
+  overflow: hidden;
+}
+
+.handle {
+  /* Thin line seperator */
+  position: absolute;
+  left: 49%;
+  top: 0;
+  bottom: 0;
+  width: 0px;
+  margin-left: -2px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: ew-resize;
+}
+
+.handle::after {
+  /* Big orange knob  */
+  position: absolute;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  margin: -22px 0 0 -22px;
+
+  content: "\21d4";
+  color: black;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  line-height: 42px;
+
+  background: #FFF;
+  border: 1px solid #000000; 
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.draggable:after {
+  width: 30px;
+  height: 30px;
+  margin: -15px 0 0 -15px;
+  line-height: 26px;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .ba-slider {
+
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+  }
+}
